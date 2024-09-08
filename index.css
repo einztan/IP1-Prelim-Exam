@@ -1,0 +1,71 @@
+/* 
+    ( Palettes ) 
+    fonts: inter, medula-one, sans 
+    colors: 
+      purple - #761c92  
+      green - #32c76b / rgb(50, 199, 107)  
+      red - #C42020 / rgb(196, 32, 32) 
+      maroon - #A63B3B 
+      white - #FFFFFF 
+      silver - #CFCFCF 
+      dark grey - #727070 
+      hollow grey - #161313 
+      hollow black - #0C0B0B 
+      black - #000000 
+*/ 
+    @font-face {
+        font-family: medula-one;
+        src: url(assets/Fonts/medula-one.ttf);
+    }
+
+    body{ background-color: #0C0B0B; display: flex; justify-content: center; flex-direction: column; color: white; font-family: inter; overflow-y: hidden; overflow-x: hidden; } 
+    *{ margin: 0px; padding: 0px; } 
+
+    .container{ border: 1px solid none; margin-top: 64px; width: 464px; height: 450px; align-self: center; }
+
+    .container .ProjectTitle{ border: 1px solid none; height: 32px; display: flex; justify-content: center; flex-direction: row; gap: 24px; }
+    .container .ProjectTitle span{ color: white; font-family: medula-one; font-size: 1.8rem; }
+
+    .container .GameBox{ background-color: white; border-radius: 32px; height: inherit; }
+
+    .container .GameBox .LeaderBoard{ border: 1px solid none; width: inherit; height: 70px; display: flex; justify-content: center; flex-direction: row; gap: 42px; }
+    .container .GameBox .LeaderBoard span{ color: #CFCFCF; margin-top: 42px; font-family: inter; font-size: 1rem; align-self: center; }
+
+    .container .GameBox .Competitors{ border: 1px solid none; height: 182px; display: flex; justify-content: center; flex-direction: row; gap: 60px; }
+
+    .container .GameBox .Competitors .Players{ border: 1px solid rgb(238, 238, 238); background-color: white; box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2); border-radius: 16px; margin-top: -24px; width: 150px; height: 150px; align-self: center; }
+
+    .container .GameBox .Competitors .Player_1 img{ transform: scaleX(1);  width: 100%; }
+    .container .GameBox .Competitors .Player_2 img{ transform: scaleX(-1); width: 100%; }
+
+    .container .GameBox .Player_Titles{ border: 1px solid none; height: 24px; display: flex; justify-content: center; flex-direction: row; gap: 55px; }
+    .container .GameBox .Player_Titles span{ color: #0C0B0B; margin-top: 0px; font-family: inter; font-size: 1rem; font-weight: 600; align-self: center; }
+
+    .container .GameBox .Score_Board{ border: 1px solid none; height: 24px; display: flex; justify-content: center; flex-direction: row; gap: 84px; }
+    .container .GameBox .Score_Board span{ color: #727070; margin-top: 0px; font-family: inter; font-size: 1rem; font-weight: 600; align-self: center; }
+
+    .container .GameBox button{ border: 1px solid #A63B3B; background-color: #A63B3B; color: white; padding: 20px; padding-left: 55px; padding-right: 55px; margin-left: 160px; margin-top: 42px; }
+    .container .GameBox button:hover{ cursor: pointer; transition: 0.3s ease-in-out; border: 1px solid #C42020; background-color: #C42020; }
+
+    @media (max-width: 768px) { 
+        body{ background-color: #0C0B0B; display: flex; justify-content: center; flex-direction: column; } 
+    } 
+
+    @media (max-width: 492px) { 
+        body{ background-color: #0C0B0B; }
+
+        .container{ width: 400px; }
+
+        .container .GameBox .LeaderBoard{ gap: 36px; }
+        .container .GameBox .LeaderBoard span{ font-size: 0.8rem; }
+
+        .container .GameBox .Competitors{ height: 142px; }
+        .container .GameBox .Competitors .Players{ margin-top: 0px; width: 124px; height: 124px; }
+
+        .container .GameBox .Player_Titles span{ margin-top: 0px; font-size: 0.8rem; }
+
+        .container .GameBox .Score_Board{ gap: 78px; }
+        .container .GameBox .Score_Board span{ margin-top: 0px; font-size: 0.8rem; }
+
+        .container .GameBox button{ margin-left: 132px; margin-top: 64px; }
+    }

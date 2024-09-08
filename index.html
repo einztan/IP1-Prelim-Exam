@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="...">
+    <link rel="icon" type="image/x-icon" href="assets/Favicon/GitFav.png">
     <link rel='stylesheet' href='index.css'> 
     <title>Document</title>
-
 </head>
 <body>
-
+        <div class="container">
+                <div class="ProjectTitle">
+                        <span> Rock </span>
+                        <span> - </span>
+                        <span> Paper </span>
+                        <span> - </span>
+                        <span> Scissor </span>
+                </div>
+                <div class="GameBox">
+                        <div class="LeaderBoard">
+                            <span id="LDRB_SCORE_Round_1_Player_1"> 0 </span>
+                            <span id="LDRB_SCORE_Round_2_Player_1"> 0 </span>
+                            <span id="LDRB_SCORE_Round_3_Player_1"> 0 </span>
+                            <span> - </span>
+                            <span id="LDRB_SCORE_Round_1_Player_2"> 0 </span>
+                            <span id="LDRB_SCORE_Round_2_Player_2"> 0 </span>
+                            <span id="LDRB_SCORE_Round_3_Player_2"> 0 </span>
+                        </div>
+                        <div class="Competitors">
+                                <div class="Players Player_1" id="Player_1_Background"> <img src="assets/Images/rock.png" alt="..." id="Player_1_Thrown"> </div>
+                                <div class="Players Player_2" id="Player_2_Background"> <img src="assets/Images/rock.png" alt="..." id="Player_2_Thrown"> </div>
+                        </div>
+                        <div class="Player_Titles">
+                            <span> Player 1 </span>
+                            <span> vs </span>
+                            <span> Player 2 </span>
+                        </div>
+                        <div class="Score_Board" id="Score_Board">
+                            <span id="Player_1_Score"> 0 </span>
+                            <span id="Announcer"> - </span>
+                            <span id="Player_2_Score"> 0 </span>
+                        </div>
+                        <button type="button" onclick="PLAY()"> PLAY </button>
+                </div>
+        </div>
         <script src='index.js' defer type='text/Javascript'></script>
 </body>
 </html>
